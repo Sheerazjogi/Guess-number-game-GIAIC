@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>n8n Automation Specialist — Client Portfolio</title>
+  <meta name="description" content="Professional portfolio of an n8n automation specialist: services, case studies, process, and contact details." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">n8n</div>
+        <div class="name">Your Name</div>
+        <div class="role">n8n Automation Specialist</div>
+      </div>
+      <nav class="primary-nav">
+        <a href="#services">Services</a>
+        <a href="#cases">Case Studies</a>
+        <a href="#process">Process</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact" class="btn btn-primary">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container grid">
+        <div>
+          <h1>Automation that saves time, reduces errors, and scales with your business</h1>
+          <p class="lead">I design, build, and maintain robust workflows in n8n — integrating your apps, APIs, and data so your team can focus on high‑value work.</p>
+          <div class="cta">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#cases" class="btn btn-secondary">View Case Studies</a>
+          </div>
+          <ul class="pill-list">
+            <li>Certified n8n expertise</li>
+            <li>Self‑hosted or Cloud</li>
+            <li>Security‑first approach</li>
+            <li>Clear documentation</li>
+          </ul>
+        </div>
+        <aside class="card highlight">
+          <h3>Typical outcomes</h3>
+          <ul>
+            <li>Automate repetitive ops across CRM, billing, and support</li>
+            <li>Near real‑time data syncs between tools (e.g., HubSpot ⇄ Sheets)</li>
+            <li>Automated alerts and approvals via Slack/Email</li>
+            <li>Reliable webhooks and error‑resilient retries</li>
+          </ul>
+          <p class="note">PDF ready: Print this page (Ctrl/Cmd+P) to export a one‑pager for stakeholders.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About</h2>
+        <p>I’m an automation engineer specializing in <strong>n8n</strong>. I help startups and enterprises streamline operations, integrate systems, and build resilient automations. Whether you’re on n8n Cloud or self‑hosting, I set up scalable workflows with best practices for observability, security, and maintainability.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>Workflow Design & Build</h3>
+            <ul>
+              <li>Event‑driven workflows (webhooks, schedules, triggers)</li>
+              <li>Conditional logic, retries, error handlers, dead‑letter flows</li>
+              <li>Data transformation (JS Function, Item Lists, Set/Move)</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Integrations</h3>
+            <ul>
+              <li>CRMs: HubSpot, Pipedrive, Salesforce (via API)</li>
+              <li>Data: Google Sheets, Airtable, Notion, Postgres</li>
+              <li>Commerce & Billing: Shopify, Woo, Stripe</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>AI & Chat Automation</h3>
+            <ul>
+              <li>OpenAI, local LLMs, prompt pipelines</li>
+              <li>Customer support triage & enrichment</li>
+              <li>Content ops: summarize, classify, route</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Self‑Hosting & DevOps</h3>
+            <ul>
+              <li>Docker & reverse proxy (Traefik/Nginx) with SSL</li>
+              <li>Backups, environment configs, secrets management</li>
+              <li>Dashboards, alerting, execution retention tuning</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Audits & Support</h3>
+            <ul>
+              <li>Workflow health checks and performance tuning</li>
+              <li>Credential inventory & access review</li>
+              <li>Runbooks, handover training, ongoing SLAs</li>
+            </ul>
+          </div>
+        </div>
+
+        <details class="code-block">
+          <summary>Example: Minimal n8n Docker Compose (self‑hosted)</summary>
+          <pre><code># docker-compose.yml
+services:
+  n8n:
+    image: n8nio/n8n:latest
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_HOST=your-domain.com
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=https
+      - WEBHOOK_URL=https://your-domain.com
+      - GENERIC_TIMEZONE=UTC
+    volumes:
+      - ./n8n_data:/home/node/.n8n
+    restart: unless-stopped
+</code></pre>
+        </details>
+      </div>
+    </section>
+
+    <section id="capabilities" class="section">
+      <div class="container grid two">
+        <div>
+          <h2>Core n8n capabilities</h2>
+          <ul class="checklist">
+            <li>Webhooks, Cron, Interval, and App‑specific triggers</li>
+            <li>Expressions, binary data handling, files & attachments</li>
+            <li>HTTP Request auth flows (OAuth2, API keys, HMAC)</li>
+            <li>Function, IF/Switch, Merge, Split‑in‑Batches patterns</li>
+            <li>Error workflows, Continue On Fail, circuit breakers</li>
+            <li>Versioning, environments, secrets via env vars</li>
+          </ul>
+        </div>
+        <div class="card subtle">
+          <h3>Common integrations</h3>
+          <p>Slack, Gmail, Google Sheets, Notion, Airtable, HubSpot, Pipedrive, Webflow, Shopify, WooCommerce, Stripe, PayPal, Twilio, WhatsApp Cloud API, Telegram, Discord, Asana, Trello, Jira, GitHub, Linear, OpenAI, custom REST APIs.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cases" class="section">
+      <div class="container">
+        <h2>Case studies</h2>
+        <div class="cards">
+          <div class="card">
+            <h3>B2B SaaS lead management</h3>
+            <p>Route inbound leads to CRM, enrich with company data, de‑duplicate, notify owners in Slack, and create follow‑up tasks with SLAs.</p>
+            <ul>
+              <li>Stack: Webhooks → Clearbit API → HubSpot → Slack → Asana</li>
+              <li>Impact: Faster lead response and cleaner CRM data</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>E‑commerce order ops</h3>
+            <p>Process new orders, synchronize inventory, trigger fulfillment, and send proactive shipping updates via WhatsApp and Email.</p>
+            <ul>
+              <li>Stack: Shopify → ERP API → Twilio/WhatsApp → Gmail</li>
+              <li>Impact: Fewer manual errors, higher customer satisfaction</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Marketing analytics hub</h3>
+            <p>Aggregate campaign data across ad platforms into a single source of truth, with scheduled refresh and anomaly alerts.</p>
+            <ul>
+              <li>Stack: Google Ads/FB Ads APIs → BigQuery/Sheets → Slack</li>
+              <li>Impact: Unified reporting and faster decision‑making</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">Note: Examples are representative. I tailor solutions and documentation to your specific tools, data, and compliance needs.</p>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container">
+        <h2>Process</h2>
+        <ol class="steps">
+          <li><strong>Discovery:</strong> Quick audit of tools, data flows, and risks</li>
+          <li><strong>Design:</strong> Low‑fi diagrams, success metrics, test plan</li>
+          <li><strong>Build:</strong> Iterative delivery with weekly demos</li>
+          <li><strong>Harden:</strong> Error handling, retries, observability</li>
+          <li><strong>Launch:</strong> Production cutover with rollback plan</li>
+          <li><strong>Handover:</strong> Runbooks + training; optional support SLA</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="deliverables" class="section">
+      <div class="container grid two">
+        <div>
+          <h2>Deliverables</h2>
+          <ul class="checklist">
+            <li>Production‑ready n8n workflows</li>
+            <li>Architecture & data‑flow diagrams</li>
+            <li>Credential inventory & access model</li>
+            <li>Runbooks, onboarding docs, SOPs</li>
+            <li>UAT scripts and success metrics</li>
+          </ul>
+        </div>
+        <div class="card subtle">
+          <h3>Security & compliance</h3>
+          <ul>
+            <li>Principle of least privilege for credentials</li>
+            <li>Secrets managed via environment variables</li>
+            <li>HTTPS, IP allow‑lists, and audit trails where applicable</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2>Pricing</h2>
+        <div class="pricing">
+          <div class="price-card">
+            <h3>Starter</h3>
+            <p class="price">Fixed‑scope</p>
+            <ul>
+              <li>1–2 workflows</li>
+              <li>Light integrations</li>
+              <li>Docs + handover</li>
+            </ul>
+          </div>
+          <div class="price-card featured">
+            <h3>Growth</h3>
+            <p class="price">Monthly retainer</p>
+            <ul>
+              <li>Ongoing iterations</li>
+              <li>Monitoring & fixes</li>
+              <li>Priority support</li>
+            </ul>
+          </div>
+          <div class="price-card">
+            <h3>Scale</h3>
+            <p class="price">Custom</p>
+            <ul>
+              <li>Critical workflows</li>
+              <li>Advanced integrations</li>
+              <li>On‑call SLA</li>
+            </ul>
+          </div>
+        </div>
+        <p class="note">I offer both project‑based and retainer models. Get in touch for a tailored quote.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>Ready to collaborate? Reach out with your goals and current tool stack.</p>
+        <div class="contact-grid">
+          <div class="card">
+            <h3>Email</h3>
+            <p><a href="mailto:you@example.com">you@example.com</a></p>
+          </div>
+          <div class="card">
+            <h3>Call / WhatsApp</h3>
+            <p><a href="tel:+1234567890">+1 234 567 890</a></p>
+          </div>
+          <div class="card">
+            <h3>Calendar</h3>
+            <p><a href="#" target="_blank" rel="noopener">Schedule a 20‑min intro</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>
+        © <span id="year"></span> Your Name — n8n Automation Specialist • Portfolio v1.0
+      </small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
